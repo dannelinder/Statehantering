@@ -1,0 +1,14 @@
+﻿@model CreateVM
+
+<form asp-controller="Settings" asp-action="Create" >
+    <label asp-for="Name"></label><br />
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span><br />
+
+    <label asp-for="Email"></label><br />
+    <input asp-for="Email" />
+    <span asp-validation-for="Email"></span><br /><br />
+
+    <input type="submit" value="Submit" />
+
+</form>

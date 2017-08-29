@@ -1,0 +1,16 @@
+﻿@model DisplayVM
+
+@if (TempData[Model.Message] != null)
+{
+    <p>@TempData[Model.Message]</p>
+}
+
+@if (Model.CacheMessage != null && Model.CacheMessage != "")
+{
+    <p>Support E-mail: @Model.CacheMessage</p>
+}
+
+@if (Model.SessionMessage != null && Model.SessionMessage != "")
+{
+    <p>Company Name: @Model.SessionMessage</p>
+}
